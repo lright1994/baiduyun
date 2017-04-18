@@ -1,1 +1,2 @@
-requests
+requests>=2.0.0
+baidupcsapi==0.3.8
