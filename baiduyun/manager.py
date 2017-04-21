@@ -40,8 +40,7 @@ def main():
         print str(e)
         print corlor_print(
             'Login failure.Please make sure to enter valid cookie.',
-            fore='red'
-        )
+            fore='red')
         sys.exit(1)
 
     print 'Yunhelper 1.0\nType "?" for help,type "quit" to quit.\n\n'

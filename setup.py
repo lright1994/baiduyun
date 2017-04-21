@@ -7,11 +7,7 @@ __author__ = 'mec'
 
 from setuptools import setup
 
-
-requirements = [
-    'requests>=2.0.0',
-    'baidupcsapi==0.3.8'
-]
+requirements = ['requests>=2.0.0', 'baidupcsapi==0.3.8']
 
 setup(
     name='baiduyun',
@@ -28,5 +24,4 @@ setup(
     entry_points='''
         [console_scripts]
         baiduyun=baiduyun.cli:main
-    '''
-)
+    ''')
