@@ -120,6 +120,7 @@ class BufferReader(MultipartEncoder):
 
 def check_login(func):
     """检查用户登录状态
+
     :param func: 需要被检查的函数
     """
 
@@ -349,7 +350,7 @@ class PCSBase(object):
                      (self.username, self.user['BDUSS']))
 
         self.user_info()
-        self._save_cookies()
+        # self._save_cookies()
 
     def _check_account_exception(self, content):
         err_id = re.findall(b'err_no=([\d]+)', content)[0].decode('utf-8')

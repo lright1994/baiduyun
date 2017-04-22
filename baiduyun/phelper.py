@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 
 #   格式：\033[显示方式;前景色;背景色m
 #   说明:
@@ -80,43 +80,3 @@ def corlor_print(string, mode='', fore='', back=''):
     end = '\033[%sm' % STYLE['default']['end'] if style else ''
 
     return '%s%s%s' % (style, string, end)
-
-
-def TestColor():
-
-    print corlor_print('正常显示')
-    print ''
-
-    print "测试显示模式"
-    print corlor_print('高亮', mode='bold'),
-    print corlor_print('下划线', mode='underline'),
-    print corlor_print('闪烁', mode='blink'),
-    print corlor_print('反白', mode='invert'),
-    print corlor_print('不可见', mode='hide')
-    print ''
-
-    print "测试前景色"
-    print corlor_print('黑色', fore='black'),
-    print corlor_print('红色', fore='red'),
-    print corlor_print('绿色', fore='green'),
-    print corlor_print('黄色', fore='yellow'),
-    print corlor_print('蓝色', fore='blue'),
-    print corlor_print('紫红色', fore='purple'),
-    print corlor_print('青蓝色', fore='cyan'),
-    print corlor_print('白色', fore='white')
-    print ''
-
-    print "测试背景色"
-    print corlor_print('黑色', back='black'),
-    print corlor_print('红色', back='red'),
-    print corlor_print('绿色', back='green'),
-    print corlor_print('黄色', back='yellow'),
-    print corlor_print('蓝色', back='blue'),
-    print corlor_print('紫红色', back='purple'),
-    print corlor_print('青蓝色', back='cyan'),
-    print corlor_print('白色', back='white')
-    print ''
-
-
-if __name__ == '__main__':
-    TestColor()
